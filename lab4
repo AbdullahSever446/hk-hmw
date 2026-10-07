@@ -1,0 +1,29 @@
+Console.Write("Enter a 3-digit number: ");
+int sayi = int.Parse(Console.ReadLine());
+int yuzler = sayi / 100;
+int onlar = (sayi / 10) % 10;
+int birler = sayi % 10;
+int toplam = yuzler + onlar + birler;
+
+Console.WriteLine($"Yüzler basamağı: {yuzler}");
+Console.WriteLine($"Onlar basamağı: {onlar}");
+Console.WriteLine($"Birler basamağı: {birler}");
+Console.WriteLine($"\nBasamakların Toplamı: {yuzler} + {onlar} + {birler} = {toplam}");
+if (sayi % 2 == 0)
+{
+    Console.WriteLine($"Girilen sayı ({sayi}) ÇİFTTİR.");
+}
+else
+{
+    Console.WriteLine($"Girilen sayı ({sayi}) TEKTİR.");
+}
+
+// Tek - Çift Kontrolü (Toplam için)
+if (toplam % 2 == 0)
+{
+    Console.WriteLine($"Basamaklar toplamı ({toplam}) ÇİFTTİR.");
+}
+else
+{
+    Console.WriteLine($"Basamaklar toplamı ({toplam}) TEKTİR.");
+}
