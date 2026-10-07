@@ -1,0 +1,15 @@
+Console.WriteLine("What is your name?");
+ınt name = Console.ReadLine();
+Console.WriteLine("Which city are you from?");
+ınt city = Console.ReadLine();
+Console.WriteLine(" what is your department?");
+ınt department = Console.ReadLine();
+Console.WriteLine("which year?");
+ınt year = Console.ReadLine();
+
+Console.WriteLine($"Name= {name}");
+Console.WriteLine($"City= {city}");
+Console.WriteLine($"Department= {department}");
+Console.WriteLine($"Year= {year}");
+Console.WriteLine("C# is fun");
+Console.WriteLine($"Hello {name} from {city}, welcome to C#");
